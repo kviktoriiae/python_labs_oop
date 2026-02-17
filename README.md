@@ -1,3 +1,2 @@
 # python_labs_oop
 ## Тут будут все лабы по ООП (я стараюсь, честно)
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
