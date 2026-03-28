@@ -31,11 +31,14 @@
 **Создание счёта**
 ![alt text](../../images/lab01/im1.png)
 
-**Проверка ревенства двух счетов:**
+**Проверка равенства двух счетов:**
+
+
 ![alt text](../../images/lab01/im2.png)
 
 **Пополнение и снятие средств:**
-![alt text](../../images/lab01/im3.png) + попытка превысить овердрафт лимит:![alt text](../../images/lab01/im4.png)
+![alt text](../../images/lab01/im3.png) + попытка превысить овердрафт лимит:
+![alt text](../../images/lab01/im4.png)
 
 **Изменение владельца:**
 ![alt text](../../images/lab01/im5.png)
