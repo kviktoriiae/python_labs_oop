@@ -89,7 +89,7 @@ class BankAccount:
         if not self._is_active:
             raise RuntimeError("Операция невозможна: счёт закрыт")
 
-    # Методы для Протоколов (Задание на 5)
+    # Методы для Протоколов 
     def display(self) -> str:
         """Реализация протокола Displayable."""
         return str(self)
