@@ -60,7 +60,7 @@ class BonusStrategy:
         return acc
 
 class TaxStrategy:
-    """Стратегия списания налога с баланса."""
+    # Стратегия списания налога с баланса
     def __init__(self, tax_rate: float):
         self.tax_rate = tax_rate
 
