@@ -23,24 +23,22 @@ S = TypeVar('S', bound=Scorable)
 #  Обобщенная коллекция (Generics) 
 
 class TypedCollection(Generic[T]):
-    """
-    Типизированная коллекция, реализующая Generic[T].
-    Поддерживает базовые операции и функциональный стиль.
-    """
+    # Типизированная коллекция, реализующая Generic[T].
+    # Поддерживает базовые операции и функциональный стиль.
     
     def __init__(self) -> None:
         self._items: list[T] = []
 
     def add(self, item: T) -> None:
-        """Добавление элемента. Тип T проверяется статическими анализаторами."""
+        # Добавление элемента. Тип T проверяется статическими анализаторами.
         self._items.append(item)
 
     def remove(self, item: T) -> None:
-        """Удаление элемента из коллекции."""
+        # Удаление элемента из коллекции.
         self._items.remove(item)
 
     def get_all(self) -> list[T]:
-        """Возвращает копию списка всех элементов."""
+        #Возвращает копию списка всех элементов.
         return list(self._items)
 
     def __getitem__(self, index: int) -> T:
@@ -55,18 +53,18 @@ class TypedCollection(Generic[T]):
     # Функциональные методы
 
     def find(self, predicate: Callable[[T], bool]) -> Optional[T]:
-        """Поиск первого элемента, удовлетворяющего условию."""
+        #Поиск первого элемента, удовлетворяющего условию.
         for item in self._items:
             if predicate(item):
                 return item
         return None
 
     def filter(self, predicate: Callable[[T], bool]) -> list[T]:
-        """Возвращает список элементов, удовлетворяющих условию."""
+        # Возвращает список элементов, удовлетворяющих условию.
         return [item for item in self._items if predicate(item)]
 
     def map(self, transform: Callable[[T], R]) -> list[R]:
-        """Применяет трансформацию к каждому элементу и возвращает список результатов типа R."""
+        #Применяет трансформацию к каждому элементу и возвращает список результатов типа R.
         return [transform(item) for item in self._items]
 
     def __str__(self) -> str:
